@@ -1,0 +1,58 @@
+name: Bug Report / バグ報告
+description: Create a report to help us improve / バグを報告して改善にご協力ください
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please fill out the form below.
+        バグ報告ありがとうございます！以下のフォームにご記入ください。
+  - type: textarea
+    id: description
+    attributes:
+      label: Description / バグの概要
+      description: A clear and concise description of what the bug is. / バグの明確で簡潔な説明を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce / 再現手順
+      description: Steps to reproduce the behavior. / バグを再現するための手順を記載してください。
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior / 期待される動作
+      description: A clear and concise description of what you expected to happen. / 本来はどうなるべきだったか、簡潔な説明を記載してください。
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS / オペレーティングシステム
+      description: e.g. macOS, Windows, Linux / 例: macOS, Windows, Linux
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: MTerm Version / MTermのバージョン
+      description: What version of MTerm are you using? / 使用しているMTermのバージョンは何ですか？
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Logs / スクリーンショットやログ
+      description: If applicable, add screenshots or logs to help explain your problem. / 可能な場合は、問題の説明に役立つスクリーンショットやログを追加してください。
+    validations:
+      required: false
