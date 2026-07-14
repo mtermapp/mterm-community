@@ -1,0 +1,57 @@
+name: バグ報告 (日本語)
+description: MTermの改善のためのバグ報告を作成します
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます！以下のフォームにご記入ください。
+  - type: textarea
+    id: description
+    attributes:
+      label: バグの概要
+      description: バグの明確で簡潔な説明を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順
+      description: バグを再現するための手順を記載してください。
+      placeholder: |
+        1. '...' に移動する
+        2. '....' をクリックする
+        3. 下にスクロールして '....' を表示する
+        4. エラーが発生する
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待される動作
+      description: 本来はどうなるべきだったか、簡潔な説明を記載してください。
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS (オペレーティングシステム)
+      description: 例: macOS, Windows, Linux
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: MTermのバージョン
+      description: 使用しているMTermのバージョンは何ですか？
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: スクリーンショットやログ
+      description: 可能な場合は、問題の説明に役立つスクリーンショットやログを追加してください。
+    validations:
+      required: false
